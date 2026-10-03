@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оставить заявку — подбор оборудования и расчёт стоимости | Каталог</title>
+  <meta name="description" content="Оставьте заявку на подбор детского и спортивного оборудования. Перезвоним в течение 15 минут, поможем с выбором и рассчитаем стоимость под ваш объект.">
+  <meta name="keywords" content="оставить заявку, подбор оборудования, расчёт стоимости, детская площадка, спортивное оборудование">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Оставить заявку — Каталог оборудования">
+  <meta property="og:description" content="Подберём оборудование под ваш объект и бюджет. Перезвоним в течение 15 минут.">
+  <meta property="og:url" content="https://example.ru/request.html">
+  <meta property="og:image" content="https://example.ru/images/og-request.jpg">
+  <meta property="og:site_name" content="Каталог оборудования">
+  <meta property="og:locale" content="ru_RU">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://example.ru/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Оставить заявку",
+        "item": "https://example.ru/request.html"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="header__logo">Каталог</a>
+
+      <nav class="header__nav" id="nav">
+        <ul class="nav-menu">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="solutions.html">Решения</a></li>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+70000000000" class="header__phone">+7 (000) 000-00-00</a>
+        <a href="request.html" class="btn btn-primary">Оставить заявку</a>
+        <button class="header__burger" id="burger" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="catalog-hero">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Оставить заявку</span>
+        </nav>
+        <h1 class="catalog-hero__title">Оставить заявку</h1>
+        <p class="catalog-hero__subtitle">Заполните форму — перезвоним в течение 15 минут</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="request-list" id="requestListWrap">
+          <h2 class="section-title">Товары в заявке</h2>
+          <div id="requestList"></div>
+        </div>
+
+        <div class="request-layout">
+
+          <div class="request-form-wrap">
+            <h2 class="section-title">Данные для связи</h2>
+            <form action="#" method="post" id="requestForm">
+              <div class="field">
+                <label class="field-label" for="name">Имя *</label>
+                <input class="field-input" type="text" id="name" name="name" required>
+              </div>
+              <div class="field">
+                <label class="field-label" for="phone">Телефон *</label>
+                <input class="field-input" type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="field">
+                <label class="field-label" for="email">Email</label>
+                <input class="field-input" type="email" id="email" name="email">
+              </div>
+              <div class="field">
+                <label class="field-label" for="organization">Организация</label>
+                <input class="field-input" type="text" id="organization" name="organization">
+              </div>
+              <div class="field">
+                <label class="field-label" for="comment">Комментарий</label>
+                <textarea class="field-textarea" id="comment" name="comment"></textarea>
+              </div>
+              <div class="field field-checkbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Согласен на обработку персональных данных</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+            </form>
+          </div>
+
+          <aside class="request-info">
+            <h2 class="section-title">Наши контакты</h2>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">📞</div>
+              <div class="contact-item__body">
+                <div class="contact-item__label">Телефон</div>
+                <a href="tel:+70000000000" class="contact-item__value">+7 (000) 000-00-00</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">✉️</div>
+              <div class="contact-item__body">
+                <div class="contact-item__label">Email</div>
+                <a href="mailto:info@example.ru" class="contact-item__value">info@example.ru</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">📍</div>
+              <div class="contact-item__body">
+                <div class="contact-item__label">Адрес</div>
+                <div class="contact-item__value">г. Москва, ул. Примерная, 1</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">🕒</div>
+              <div class="contact-item__body">
+                <div class="contact-item__label">Режим работы</div>
+                <div class="contact-item__value">Пн–Пт: 9:00–18:00</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col">
+          <div class="footer__logo">Каталог</div>
+          <p class="footer__text">Производство и поставка детского и спортивного оборудования для дворов, школ и парков.</p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Каталог</h3>
+          <ul class="footer__list">
+            <li><a href="catalog.html">Игровые комплексы</a></li>
+            <li><a href="catalog.html">Спортивное оборудование</a></li>
+            <li><a href="catalog.html">Качели и карусели</a></li>
+            <li><a href="catalog.html">Горки и песочницы</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Компания</h3>
+          <ul class="footer__list">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="contacts.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+            <li><a href="mailto:info@example.ru">info@example.ru</a></li>
+            <li>г. Москва, ул. Примерная, 1</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Все права защищены</p>
+        <a href="privacy.html">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /request.html
+
+Sitemap: https://example.ru/sitemap.xml
